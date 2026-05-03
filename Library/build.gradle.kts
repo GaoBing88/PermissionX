@@ -7,29 +7,18 @@ version = "1.0.0"
 
 android {
     namespace = "com.permissionx.guolindev"
-//    compileSdk {
-//        version = release(36) {
-//            minorApiLevel = 1
-//        }
-//    }
-    compileSdk = 36   // ✅ 正确写法
+    compileSdk {
+        version = release(36) {
+            minorApiLevel = 1
+        }
+    }
     defaultConfig {
         minSdk = 24
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
-    buildTypes {
-        release {
-            isMinifyEnabled = false   // ✅ 正确写法
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
     publishing {
         singleVariant("release") {
-            // 如果需要，可以在这里生成源码/javadoc jar包
         }
     }
     compileOptions {
