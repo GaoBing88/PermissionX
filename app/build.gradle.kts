@@ -57,4 +57,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
     implementation(project(":Library"))
+//    implementation("com.github.GaoBing88:PermissionX:1.0.0")
 }
