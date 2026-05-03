@@ -3,7 +3,7 @@ plugins {
     id("maven-publish")
 }
 group = "com.permissionx.guolindev"
-version = "1.0.1"
+version = "1.0.0"
 
 android {
     namespace = "com.permissionx.guolindev"
