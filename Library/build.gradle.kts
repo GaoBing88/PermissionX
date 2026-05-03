@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
 }
+group = "com.permissionx.guolindev"
+version = "1.0.0"
 
 android {
     namespace = "com.permissionx.guolindev"
@@ -24,10 +26,8 @@ android {
 }
 
 dependencies {
-//    implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
-//    implementation(libs.androidx.fragment.ktx)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)

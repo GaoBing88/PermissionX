@@ -39,9 +39,7 @@ androidComponents {
         variant.outputs.forEach { output ->
             if (variant.buildType == "release") {
                 val apkName =
-                    "${
-                        android.defaultConfig.applicationId?.split(".")?.last()
-                    }_v${android.defaultConfig.versionName}.apk"
+                    "permissionx_v${android.defaultConfig.versionName}.apk"
                 @Suppress("UnstableApiUsage")
                 output.outputFileName = apkName
             }
